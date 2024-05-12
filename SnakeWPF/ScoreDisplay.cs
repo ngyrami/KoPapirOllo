@@ -1,4 +1,4 @@
-Ôªøusing System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -11,19 +11,19 @@ namespace SnakeWPF
 {
     public class ScoreDisplay
     {
-        private MainWindow mainWindow;  // A f≈ëablak, amelyben a pontsz√°m megjelenik
-        private Snake snake;  // A k√≠gy√≥ objektum, amelynek a pontsz√°m√°t megjelen√≠tj√ºk
+        private MainWindow mainWindow;  // A fıablak, amelyben a pontsz·m megjelenik
+        private Snake snake;  // A kÌgyÛ objektum, amelynek a pontsz·m·t megjelenÌtj¸k
 
-        public ScoreDisplay(MainWindow mainWindow)  // Konstruktor a ponsz√°ml√°l√≥hoz
+        public ScoreDisplay(MainWindow mainWindow)  // Konstruktor a ponsz·ml·lÛhoz
         {
             this.mainWindow = mainWindow;
-            UpdateScoreDisplay();  // Pontsz√°m megjelen√≠t√©s√©nek friss√≠t√©se a konstruktorban
+            UpdateScoreDisplay();  // Pontsz·m megjelenÌtÈsÈnek frissÌtÈse a konstruktorban
         }
 
         public void UpdateScoreDisplay()
         {
-            // A f≈ëablakban l√©v≈ë Score TextBox friss√≠t√©se a k√≠gy√≥ aktu√°lis pontsz√°m√°val
-            mainWindow.Score.Text ="Pontsz√°m: " + mainWindow.snake.CountSegments().ToString();
+            // A fıablakban lÈvı Score TextBox frissÌtÈse a kÌgyÛ aktu·lis pontsz·m·val
+            mainWindow.Score.Text ="Pontsz·m: " + mainWindow.snake.CountSegments().ToString();
         }
 
     }
