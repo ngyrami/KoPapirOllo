@@ -13,7 +13,7 @@ namespace SnakeWPF
     {
         private const int InitialLength = 1;  // Alap kígyóhossz beállítása
         private const int SegmentSize = 20;  // Az egyes kígyó szegmensek mérete
-        public  List<Point> segments = new List<Point>();  // A kígyó szegmenseit tartalmazó lista
+        public List<Point> segments = new List<Point>();  // A kígyó szegmenseit tartalmazó lista
         private readonly Canvas gameSpace;  // Játéktér elem
         private int dx;  // A kígyó vízszintes mozgási iránya
         private int dy;  // A kígyó függőleges mozgási iránya
@@ -83,13 +83,13 @@ namespace SnakeWPF
             AddSegment(newX, newY);
 
 
-            Console.WriteLine("Tail: "+ tail);
-            Console.WriteLine("Segments: "+ segments.Count);
+            Console.WriteLine("Tail: " + tail);
+            Console.WriteLine("Segments: " + segments.Count);
         }
 
         public int CountSegments() // Kígyószegmensek számának lekérése (pontszám)
         {
-            return segments.Count -1;
+            return segments.Count - 1;
         }
 
         private void UpdateSegmentsPosition()  // Kígyószegmensek pozíciójának frissítése a képernyőn
@@ -106,7 +106,7 @@ namespace SnakeWPF
         {
             double headX = segments[0].X;
             double headY = segments[0].Y;
-            return headX < 0 || headX >= maxWidth || headY < 0 || headY >= maxHeight||  CheckSelfCollision();
+            return headX < 0 || headX >= maxWidth || headY < 0 || headY >= maxHeight || CheckSelfCollision();
         }
 
         private bool CheckSelfCollision()  // Ütközés ellenőrzése a kígyó önmagával
@@ -136,7 +136,7 @@ namespace SnakeWPF
             dx = 10;
             dy = 0;
 
-            
+
         }
     }
 }

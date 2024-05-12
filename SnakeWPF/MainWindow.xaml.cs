@@ -97,7 +97,6 @@ namespace SnakeWPF
             {
                 Console.WriteLine($"Type: {segment.GetType()}, Value: ({segment.X}, {segment.Y})");  // Debug üzenet
             }
-        
         }
 
         // Metódus, mely ellenőrzi az étel elfogyasztását és új ételt generál
