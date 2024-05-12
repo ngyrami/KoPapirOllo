@@ -24,5 +24,17 @@ namespace GameMenu
         {
             InitializeComponent();
         }
+
+        private void KoPapirOllo_Click(object sender, RoutedEventArgs e)
+        {
+            KoPapirOllo.MainWindow KoPapirOlloWindow = new KoPapirOllo.MainWindow();
+            KoPapirOlloWindow.Show();
+        }
+
+        private void Snake_Click(object sender, RoutedEventArgs e)
+        {
+            SnakeWPF.MainWindow SnakeWindow = new SnakeWPF.MainWindow();
+            SnakeWindow.Show();
+        }
     }
 }

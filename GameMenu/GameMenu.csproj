@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="KoPapirOllo">
+      <HintPath>KoPapirOllo\obj\Debug\KoPapirOllo.exe</HintPath>
+    </Reference>
+    <Reference Include="SnakeWPF">
+      <HintPath>SnakeWPF\obj\Debug\SnakeWPF.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
