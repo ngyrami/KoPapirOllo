@@ -1,0 +1,15 @@
+﻿<Window x:Class="GameMenu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameMenu"
+        mc:Ignorable="d"
+        Title="Menü" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,92,0,0" Height="80" Width="200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Times new roman" FontSize="40" >Játék menü:</TextBox>
+        <Button Name="KoPapirOllo" Content="Kő papír olló" HorizontalAlignment="Left" Margin="150"  VerticalAlignment="Center" Click="KoPapirOllo_Click" Height="60" Width="120" FontFamily="Times new roman" FontSize="20"/>
+        <Button Name="Snake" Content="Snake" HorizontalAlignment="Right" Margin="150" VerticalAlignment="Center" Click="Snake_Click" Height="60" Width="120" FontFamily="Times new roman" FontSize="20" />
+
+    </Grid>
+</Window>
